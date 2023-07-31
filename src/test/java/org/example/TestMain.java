@@ -25,10 +25,10 @@ public class TestMain {
     private static void createUser() throws JSONException {
         String baseURI = "http://localhost:8080/api/auth/signup";
         JSONObject requestBody = new JSONObject()
-                .put("username", "test_name12")
-                .put("firstname", "testname12")
-                .put("lastname", "test-last-name12")
-                .put("email", "test12@mail.com")
+                .put("username", "test_name")
+                .put("firstname", "testname")
+                .put("lastname", "test-last-name")
+                .put("email", "test@mail.com")
                 .put("password", "Qwerty123")
                 .put("confirmPassword", "Qwerty123");
 
@@ -46,7 +46,7 @@ public class TestMain {
     private static String signinUser() throws JSONException {
         String baseURI = "http://localhost:8080/api/auth/signin";
         JSONObject requestBody = new JSONObject()
-                .put("username", "test7@mail.com")
+                .put("username", "test@mail.com")
                 .put("password", "Qwerty123");
 
         RequestSpecification request = given();
